@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/post-block",
+  "version": "0.1.0",
+  "title": "Post Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "align": true,
+    "html": false
+  },
+  "textdomain": "post-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "numberOfPosts": {
+      "type": "number",
+      "default": 5
+    },
+    "displayFeaturedImage": {
+      "type": "boolean",
+      "default": true
+    },
+    "order": {
+      "type": "string",
+      "default": "desc"
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "date"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}
